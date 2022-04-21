@@ -317,6 +317,7 @@ public:
         return 0;
     }
 
+protected:
     /// cr / lf
     virtual const char_t& cr() const {
         static const char_t cr = (char_t)'\r';
@@ -325,6 +326,17 @@ public:
     virtual const char_t& lf() const {
         static const char_t lf = (char_t)'\n';
         return lf;
+    }
+
+public:
+    /// outX...
+    virtual ssize_t outXln(const void* out, size_t length, bool upper_case = true) {
+        ssize_t count = outxln(out, length, upper_case);
+        return count;
+    }
+    virtual ssize_t outX(const void* out, size_t length, bool upper_case = true) {
+        ssize_t count = outx(out, length, upper_case);
+        return count;
     }
 
     /// outx...
@@ -358,6 +370,7 @@ public:
         }
         return count;
     }
+protected:
     /// dtox / xtod
     virtual char_t dtox(uint8_t d, bool upper_case = false) const {
         char a = (upper_case)?('A'):('a'); char_t x = (char_t)(0);
@@ -376,6 +389,7 @@ public:
         return (char_t)(0);
     }
 
+public:
     /// out64...
     virtual ssize_t out64ln(const void* out, size_t length) {
         ssize_t count = 0, amount = 0;
@@ -420,6 +434,7 @@ public:
         }
         return count;
     }
+protected:
     virtual ssize_t put64(uint8_t b, uint8_t& carry, uint8_t& shift) {
         const uint8_t mask = ((uint8_t)-1);
         ssize_t count = 0, amount = 0;
