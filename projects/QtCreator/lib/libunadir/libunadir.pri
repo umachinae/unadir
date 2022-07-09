@@ -16,14 +16,14 @@
 #   File: libunadir.pri
 #
 # Author: $author$
-#   Date: 1/25/2022
+#   Date: 3/28/2022, 5/8/2022
 #
 # generic QtCreator project .pri file for framework unadir static library libunadir
 ########################################################################
 
 ########################################################################
 # libunadir
-XOS_LIB_UNADIR_VERSION_BUILD_DATE = 1/25/2022 #$$system(~/bin/utility/tdate)
+XOS_LIB_UNADIR_VERSION_BUILD_DATE = 5/8/2022 #$$system(~/bin/utility/tdate)
 
 # libunadir TARGET
 #

@@ -16,7 +16,7 @@
 #   File: unadir.pri
 #
 # Author: $author$
-#   Date: 1/26/2022
+#   Date: 4/29/2022, 5/8/2022
 #
 # generic QtCreator project .pri file for framework unadir executable unadir
 ########################################################################
@@ -55,12 +55,14 @@ XOS_CONSOLE_MAIN_MAIN \
 # unadir_exe HEADERS
 #
 unadir_exe_HEADERS += \
-$${UNADIR_SRC}/xos/app/console/unadir/main.hpp \
+$${UNADIR_SRC}/xos/app/console/unadir/version/main_opt.hpp \
+$${UNADIR_SRC}/xos/app/console/unadir/version/main.hpp \
 
 # unadir_exe SOURCES
 #
 unadir_exe_SOURCES += \
-$${UNADIR_SRC}/xos/app/console/unadir/main.cpp \
+$${UNADIR_SRC}/xos/app/console/unadir/version/main_opt.cpp \
+$${UNADIR_SRC}/xos/app/console/unadir/version/main.cpp \
 
 ########################################################################
 # unadir_exe FRAMEWORKS
