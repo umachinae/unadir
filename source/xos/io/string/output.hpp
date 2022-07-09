@@ -16,12 +16,12 @@
 ///   File: output.hpp
 ///
 /// Author: $author$
-///   Date: 3/2/2022
+///   Date: 3/3/2022
 ///////////////////////////////////////////////////////////////////////
 #ifndef XOS_IO_STRING_OUTPUT_HPP
 #define XOS_IO_STRING_OUTPUT_HPP
 
-#include "xos/base/output.hpp"
+#include "xos/io/output.hpp"
 
 namespace xos {
 namespace io {
@@ -48,7 +48,7 @@ public:
     typedef char_t sized_t;
 
     /// constructors / destructor
-    outputt(const outputt& copy): extends(copy) {
+    outputt(const outputt& copy) {
     }
     outputt(string_t& string): string_(string) {
     }
